@@ -1,7 +1,10 @@
 package com.cv.learningkotlin.kotlin
 
+import java.math.BigDecimal
+import kotlin.math.roundToInt
+
 fun main(args: Array<String>) {
-    strings()
+    doubles()
 }
 
 fun strings() {
@@ -28,4 +31,33 @@ fun strings() {
 }
 
 
+fun doubles() {
+    val myDouble = 21.4
+
+    println("is myDouble a Double? ${myDouble is Double}")
+    println("myDouble is a ${myDouble::class.qualifiedName}")
+
+    println("myDouble's javaClass is ${myDouble.javaClass}")
+
+    var myInteger = myDouble.roundToInt()
+    println("myInteger is a ${myInteger::class.qualifiedName}")
+
+    val anotherInteger: Int = 17  //Int, not integer!!!!
+
+    var myFloat: Float = 13.6f
+
+    val result = myFloat + anotherInteger
+    print(result)
+
+    //BigDecimal bd = new BigDecimal(17)
+    val bd : BigDecimal = BigDecimal(17)
+    val bd2 : BigDecimal
+
+    println("Hello")
+    // bd2.abs() must be initialized
+
+    bd2 = bd.add(BigDecimal(30))
+
+
+}
 
