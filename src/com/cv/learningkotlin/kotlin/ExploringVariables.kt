@@ -59,5 +59,7 @@ fun doubles() {
     bd2 = bd.add(BigDecimal(30))
 
 
+    val myUnit: Unit //equivalent to Java's void
+
 }
 
